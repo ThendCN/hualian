@@ -1,0 +1,262 @@
+.page {
+  background: var(--bg);
+  min-height: 100%;
+  padding-bottom: 16px;
+}
+
+.cardWrap {
+  padding: 8px 16px 0;
+}
+
+.loginCard {
+  background: linear-gradient(135deg, #C5963A, #E8B960);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  min-height: 80px;
+}
+
+.loginHint {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Banner */
+.bannerWrap {
+  padding: 12px 16px 0;
+}
+
+.banner {
+  background: linear-gradient(135deg, #E85C3A, #F08A6A);
+  border-radius: var(--radius);
+  padding: 16px 20px 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bannerCircle {
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.bannerTitle {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.bannerSub {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.bannerBtn {
+  display: inline-block;
+  background: #fff;
+  color: var(--primary);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+.bannerDots {
+  position: absolute;
+  bottom: 10px;
+  right: 16px;
+  display: flex;
+  gap: 4px;
+}
+
+.dot {
+  width: 6px;
+  height: 3px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: width 0.2s;
+}
+
+.dotActive {
+  width: 16px;
+  background: #fff;
+}
+
+/* 快捷入口 */
+.shortcuts {
+  padding: 16px 16px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.shortcut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.shortcutIcon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hotTag {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 8px;
+  padding: 1px 5px;
+  border-radius: 6px;
+  font-weight: 700;
+}
+
+.shortcutLabel {
+  font-size: 12px;
+  color: var(--ink);
+}
+
+/* 通用 section */
+.section {
+  padding: 20px 16px 0;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.sectionMore {
+  font-size: 12px;
+  color: var(--ink3);
+  cursor: pointer;
+}
+
+/* 活动卡片 */
+.activityCard {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 14px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.activityInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.activityTitle {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.activityTag {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.tagOngoing {
+  color: var(--primary);
+  background: var(--primary-light);
+}
+
+.tagUpcoming {
+  color: var(--gold);
+  background: var(--gold-light);
+}
+
+.activitySub {
+  font-size: 12px;
+  color: var(--ink3);
+}
+
+/* 商品横滚 */
+.productScroll {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.productCard {
+  min-width: 130px;
+  background: var(--card);
+  border-radius: var(--radius);
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.productImg {
+  height: 100px;
+  background: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    color: var(--ink3);
+    font-size: 11px;
+  }
+}
+
+.productInfo {
+  padding: 10px;
+}
+
+.productName {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--ink);
+}
+
+.productPrice {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.productMeta {
+  font-size: 10px;
+  color: var(--ink3);
+  margin-top: 2px;
+}

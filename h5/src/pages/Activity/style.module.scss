@@ -1,0 +1,153 @@
+.page {
+  background: var(--bg);
+  min-height: 100%;
+  padding-bottom: 16px;
+}
+
+.tabBar {
+  display: flex;
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+}
+
+.tab {
+  flex: 1;
+  text-align: center;
+  padding: 12px 0;
+  font-size: 14px;
+  color: var(--ink2);
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tabActive {
+  color: var(--primary);
+  font-weight: 600;
+  border-bottom-color: var(--primary);
+}
+
+.notice {
+  margin: 10px 16px 0;
+  background: var(--gold-light);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.noticeText {
+  flex: 1;
+  font-size: 12px;
+  color: var(--gold);
+}
+
+.list {
+  padding: 10px 16px 0;
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cardBanner {
+  height: 80px;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.bannerOrange {
+  background: linear-gradient(135deg, #E85C3A, #F08A6A);
+}
+
+.bannerGold {
+  background: linear-gradient(135deg, #C5963A, #E8B960);
+}
+
+.bannerCircle {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.cardTitle {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+}
+
+.cardDate {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 12px;
+  margin-top: 2px;
+  position: relative;
+}
+
+.cardBody {
+  padding: 14px;
+}
+
+.cardDesc {
+  font-size: 13px;
+  color: var(--ink2);
+  margin-bottom: 10px;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statusTag {
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.tagOrange {
+  color: var(--primary);
+  background: var(--primary-light);
+}
+
+.tagGold {
+  color: var(--gold);
+  background: var(--gold-light);
+}
+
+.couponBtn {
+  background: var(--primary);
+  color: #fff;
+  font-size: 11px;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--ink3);
+  font-size: 14px;
+}

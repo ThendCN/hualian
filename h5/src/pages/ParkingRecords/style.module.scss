@@ -1,0 +1,138 @@
+.page {
+  min-height: 100vh;
+  background: var(--bg);
+}
+
+.content {
+  padding: 16px;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px 0;
+  color: var(--ink3);
+  font-size: 14px;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 80px 0;
+  color: var(--ink3);
+  font-size: 14px;
+
+  p { margin: 0; }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.plate {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: 1px;
+}
+
+.status {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.statusParking {
+  background: #FFF3E0;
+  color: #E65100;
+}
+
+.statusDone {
+  background: #E8F5E9;
+  color: var(--success);
+}
+
+.times {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 12px;
+}
+
+.timeRow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.timeLabel {
+  font-size: 12px;
+  color: var(--ink3);
+  width: 28px;
+  flex-shrink: 0;
+}
+
+.timeVal {
+  font-size: 13px;
+  color: var(--ink2);
+}
+
+.cardBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feeInfo {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.feeLabel {
+  font-size: 13px;
+  color: var(--ink3);
+}
+
+.feeVal {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.pointsInfo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.pointsLabel {
+  font-size: 12px;
+  color: var(--ink3);
+}
+
+.pointsVal {
+  font-size: 13px;
+  color: var(--gold);
+  font-weight: 500;
+}

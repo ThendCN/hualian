@@ -1,0 +1,10 @@
+.layout {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.content {
+  padding-bottom: calc(56px + var(--safe-bottom));
+  min-height: 100vh;
+}

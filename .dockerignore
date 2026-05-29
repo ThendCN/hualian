@@ -1,0 +1,7 @@
+node_modules
+h5/node_modules
+server/node_modules
+h5/dist
+server/dist
+.git
+*.db

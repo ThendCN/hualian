@@ -1,0 +1,117 @@
+.card {
+  background: linear-gradient(135deg, #2C2420 0%, #3D322C 50%, #2C2420 100%);
+  border-radius: var(--radius);
+  padding: 20px 20px 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 160px;
+  height: 160px;
+  background: radial-gradient(circle at 80% 20%, rgba(197, 150, 58, 0.15), transparent 70%);
+  pointer-events: none;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brandName {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.levelBadge {
+  background: linear-gradient(135deg, #C5963A, #E8B960);
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.memberId {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 12px;
+}
+
+.right {
+  text-align: right;
+}
+
+.points {
+  color: var(--gold);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+  font-family: 'DM Serif Display', serif;
+}
+
+.pointsLabel {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 11px;
+  margin-top: 3px;
+}
+
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.statLabel {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 11px;
+}
+
+.statValue {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.statValueGold {
+  color: var(--gold);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.codeBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}

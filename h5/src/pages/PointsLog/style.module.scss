@@ -1,0 +1,92 @@
+.page {
+  background: var(--bg);
+  min-height: 100%;
+  padding-bottom: 16px;
+}
+
+.summary {
+  background: linear-gradient(135deg, var(--primary), #F08A6A);
+  padding: 24px 20px;
+  text-align: center;
+}
+
+.summaryLabel {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.summaryValue {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.list {
+  padding: 8px 16px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.iconEarn {
+  background: #E8F5E9;
+  color: #34A853;
+}
+
+.iconSpend {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+}
+
+.desc {
+  font-size: 14px;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.time {
+  font-size: 12px;
+  color: var(--ink3);
+}
+
+.points {
+  font-size: 16px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.pointsEarn {
+  color: #34A853;
+}
+
+.pointsSpend {
+  color: var(--primary);
+}
+
+.empty {
+  text-align: center;
+  padding: 60px 0;
+  color: var(--ink3);
+  font-size: 14px;
+}

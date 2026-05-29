@@ -1,0 +1,310 @@
+.page {
+  min-height: 100vh;
+  background: var(--bg);
+  padding-bottom: 40px;
+}
+
+.pointsBar {
+  background: linear-gradient(135deg, #C5963A, #E8B960);
+  padding: 20px 20px 24px;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.pointsLabel {
+  font-size: 14px;
+  color: rgba(255,255,255,0.85);
+}
+
+.pointsValue {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+
+.pointsUnit {
+  font-size: 16px;
+  color: rgba(255,255,255,0.85);
+}
+
+.section {
+  margin: 16px 16px 0;
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+
+.sectionTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ink2);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.plateScroll {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar { display: none; }
+}
+
+.platePill {
+  flex-shrink: 0;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 18px;
+  border: 1.5px solid var(--border);
+  background: var(--bg);
+  color: var(--ink2);
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+  transition: all 0.15s;
+}
+
+.plateActive {
+  border-color: var(--primary);
+  background: var(--primary-light);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.pillDefault {
+  font-size: 10px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 10px;
+  padding: 1px 5px;
+}
+
+.plateInput {
+  width: 100%;
+  height: 44px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0 14px;
+  font-size: 16px;
+  color: var(--ink);
+  background: var(--bg);
+  box-sizing: border-box;
+  outline: none;
+  margin-top: 12px;
+
+  &:focus { border-color: var(--primary); }
+}
+
+.queryLoading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  color: var(--ink3);
+  font-size: 14px;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--border);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.noParking {
+  text-align: center;
+  padding: 24px 0;
+  color: var(--ink3);
+  font-size: 14px;
+}
+
+.parkingCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.parkingRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parkingKey {
+  font-size: 14px;
+  color: var(--ink2);
+}
+
+.parkingVal {
+  font-size: 14px;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.parkingFeeRow {
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.parkingFee {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.deductCard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.deductInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deductHint {
+  font-size: 13px;
+  color: var(--ink3);
+}
+
+.deductMax {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.sliderWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.slider {
+  width: 100%;
+  height: 4px;
+  accent-color: var(--gold);
+  cursor: pointer;
+}
+
+.sliderLabels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--ink3);
+}
+
+.deductCalc {
+  background: var(--bg);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.calcRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.calcKey {
+  font-size: 14px;
+  color: var(--ink2);
+}
+
+.calcVal {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.calcTotal {
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+.deductBtn {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(135deg, var(--primary), #F07050);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 4px;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.successCard {
+  margin: 16px 16px 0;
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.successIcon {
+  margin-bottom: 4px;
+}
+
+.successTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--success);
+}
+
+.successRows {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.successRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--ink2);
+
+  span:last-child {
+    font-weight: 600;
+  }
+}
+
+.recordsLink {
+  text-align: center;
+  padding: 24px;
+  font-size: 14px;
+  color: var(--ink3);
+  cursor: pointer;
+
+  &:active { opacity: 0.7; }
+}

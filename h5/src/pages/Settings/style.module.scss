@@ -1,0 +1,39 @@
+.page {
+  background: var(--bg);
+  min-height: 100vh;
+}
+
+.menuCard {
+  background: var(--card);
+  margin: 12px 16px;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.menuItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.menuLabel {
+  font-size: 15px;
+  color: var(--ink);
+}
+
+.menuLabelDanger {
+  font-size: 15px;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+.chevron {
+  color: var(--ink3);
+}

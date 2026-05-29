@@ -1,5 +1,6 @@
 # Stage 1: Build frontend
 FROM node:20-alpine AS frontend-build
+RUN npm config set registry https://registry.npmmirror.com
 WORKDIR /build/h5
 COPY h5/package.json h5/package-lock.json ./
 RUN npm ci
@@ -8,6 +9,7 @@ RUN npm run build
 
 # Stage 2: Build backend
 FROM node:20-alpine AS backend-build
+RUN npm config set registry https://registry.npmmirror.com
 WORKDIR /build/server
 COPY server/package.json server/package-lock.json ./
 RUN npm ci

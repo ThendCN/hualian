@@ -3,11 +3,11 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    ports:
-      - "80"
     volumes:
       - app-data:/app/server/data
     restart: unless-stopped
+    networks:
+      - dokploy-network
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.hualian.rule=Host(`hl.xee.link`)"
@@ -17,3 +17,7 @@ services:
 
 volumes:
   app-data:
+
+networks:
+  dokploy-network:
+    external: true
